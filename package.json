@@ -1,0 +1,28 @@
+{
+  "name": "toxin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeoneAtLeast/Toxin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeoneAtLeast/Toxin/issues"
+  },
+  "homepage": "https://github.com/SomeoneAtLeast/Toxin#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.8.0"
+  }
+}
