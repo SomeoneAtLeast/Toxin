@@ -11,11 +11,21 @@ let conf = {
 		overlay: true
 	},
 	module: {
-		rules: {
-			test: /\.js$/,
-			loader: "babel-loader"
-		}
+		rules: [
+			{
+				test: /\.js$/,
+				loader: "babel-loader"
+			}
+		]
 	}
 };
 
-module.exports = conf;
+module.exports = (env, options) => {
+	let production = options.mode === "production";
+
+	conf.devtool = production
+					? "source-map"
+					: "eval-sourcemap";
+
+	return conf;
+}
