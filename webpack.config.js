@@ -27,14 +27,33 @@ let conf = {
 					loader: "css-loader"
 				},
 				{
+					loader: "postcss-loader",
+					options: {
+						config: {
+							path: "src/js/postcss.config.js"
+						}
+					}
+				},
+				{
 					loader: "sass-loader"
 				}
 				]
 			}, {
 				test: /\.css$/,
 				use: [ 
+				"style-loader",
 				MiniCssExtractPlugin.loader,
-				"css-loader"
+				{
+					loader: "css-loader"
+				},
+				{
+					loader: "postcss-loader",
+					options: {
+						config: {
+							path: "src/js/postcss.config.js"
+						}
+					}
+				}
 				]
 			}
 		]
