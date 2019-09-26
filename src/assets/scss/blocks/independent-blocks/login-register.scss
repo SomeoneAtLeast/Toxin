@@ -1,0 +1,33 @@
+.login-register {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	align-items: center;
+}
+
+.login-register--header {
+	margin-left: 28px;
+}
+
+.login-register__login,
+.login-register__register {
+	border-radius: 22px;
+	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	cursor: pointer;
+}
+
+.login-register__register {
+	padding: 7px 20px;
+}
+
+.login-register__login {
+	padding: 2px;
+	text-transform: uppercase;
+	@include bold-standart-font-color-purple;
+}
+
+.login-register__login-overlay {
+	background-color: #fff;
+	padding: 7px 20px;
+	border-radius: 22px;
+}

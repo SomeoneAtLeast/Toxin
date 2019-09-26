@@ -1,4 +1,47 @@
+@import "./variables/variables.scss";
+@import "./mixins/mixins.scss";
+
 body {
-	color: blue;
-	display: flex;
+	min-width: 320px;
+	max-width: 1920px;
+	overflow: scroll;
+	background-color: #E5E5E5;
+	font-family: 'Montserrat-Regular', sans-serif;
+	color: $standart-font-color;
+	font-size: 14px;
+	line-height: 17px;
 }
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+} 
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+@font-face {
+	font-family: Montserrat-Regular; 
+	src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+} 
+
+@font-face {
+	font-family: Montserrat-Bold; 
+	src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+} 
+
+@import "./normalize/normalize.scss";
+@import "./blocks/composite-blocks/header-no-login.scss";
+@import "./blocks/independent-blocks/logo.scss";
+@import "./blocks/independent-blocks/main-nav.scss";
+@import "./blocks/independent-blocks/login-register.scss";

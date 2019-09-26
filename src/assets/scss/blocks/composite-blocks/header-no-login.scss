@@ -1,0 +1,24 @@
+.main-header {
+	background-color: #fff;
+	padding: 12px 0;
+
+	&--margin {
+		margin-top: 7.9%;
+	}
+}
+
+.main-header__wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media (min-width: $tablet) {
+
+	.main-header__wrapper {
+		width: 60.9%;
+		margin: 0 auto;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
+}

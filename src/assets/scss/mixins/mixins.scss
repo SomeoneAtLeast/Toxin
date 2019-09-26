@@ -1,0 +1,13 @@
+@mixin bold-standart-font-no-color () {
+	font-family: 'Montserrat-bold', sans-serif;
+} 
+
+@mixin bold-standart-font-color-black () {
+	font-family: 'Montserrat-bold', sans-serif;
+	color: $rich-standart-font-color;
+} 
+
+@mixin bold-standart-font-color-purple () {
+	font-family: 'Montserrat-bold', sans-serif;
+	color: $purple-color;
+} 

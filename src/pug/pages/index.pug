@@ -1,21 +1,9 @@
 doctype html
-html(lang='en')
+html(lang="ru")
   head
-    title Jade
+    meta(charset="utf-8")
+    title index
+    meta(name="viewport",content="width=device-width,initial-scale=1")
     script(src='/dist/main.js')
-    script(type='text/javascript').
-      const foo = true;
-      let bar = function() {};
-      if (foo) {
-      bar(1 + 5)
-      }
-
   body
-    h1 Jade - node template engine
-    #container.col
-      p You are amazing
-      p
-        | Jade is a terse and simple
-        | templating language with a
-        | strong focus on performance
-        | and powerful features.
+    include ../includes/UI kit/composite-blocks/header-no-login.pug

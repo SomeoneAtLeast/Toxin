@@ -1,0 +1,46 @@
+.logo {
+	display: flex;
+	cursor: pointer;
+
+	&--header {
+		margin-top: 15px;
+	}
+
+	&:active .logo__img {
+		opacity: 0.3;
+		transition: 0.3;
+	}
+}
+
+.logo__wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 106px;
+}
+
+@media (min-width: $tablet) {
+
+	.logo {
+	display: flex;
+
+		&--header {
+			margin-top: 0;
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (min-width: $desktop)  {
+
+	.logo {
+
+		&:hover,
+		&:focus {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+	}	
+}

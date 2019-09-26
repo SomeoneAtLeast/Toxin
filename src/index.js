@@ -1,2 +1,2 @@
-import './js/index.js'
+import './js/main.js'
 import './assets/scss/main.scss'
