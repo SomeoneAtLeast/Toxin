@@ -1,10 +1,13 @@
 // Размеры экранов
-$tablet: 540px;
+$tablet: 855px;
 $desktop: 1200px;
+$bigdesktop: 1449px;
 
 // Цвета текста ссылок и кнопок
 $standart-font-color: rgba(31, 32, 65, 0.5);
-$rich-standart-font-color: rgba(31, 32, 65, 1);
+$rich-standart-font-color: rgba(31, 32, 65, 0.75);
+$very-rich-standart-font-color: rgba(31, 32, 65, 1);
 $active-font-color: rgba(31, 32, 65, 0.1);
-$hover-focus-font-color: rgba(31, 32, 65, 0.8);
+$hover-focus-font-color: rgba(31, 32, 65, 0.3);
 $purple-color: #BC9CFF;
+$white-color: #fff;

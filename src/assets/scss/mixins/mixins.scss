@@ -10,4 +10,9 @@
 @mixin bold-standart-font-color-purple () {
 	font-family: 'Montserrat-bold', sans-serif;
 	color: $purple-color;
+}
+
+@mixin bold-standart-font-color-white () {
+	font-family: 'Montserrat-bold', sans-serif;
+	color: $white-color;
 } 

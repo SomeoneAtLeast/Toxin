@@ -1,12 +1,62 @@
 .login-register {
-	display: flex;
-	justify-content: space-between;
-	width: 200px;
-	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: none;
+	background-color: $white-color;
+	width: 100%;
+
+	&--header {
+		margin-top: 2%; 
+	}
 }
 
-.login-register--header {
-	margin-left: 28px;
+.login-register__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nojs {
+	display: block;
+}
+
+.open-reg {
+	position: absolute;
+	top: 335px;
+	display: flex;
+	justify-content: center;
+	animation-name: show-reg;
+	animation-duration: 0.8s;
+}
+
+.close-reg {
+	animation-name: close-reg;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes show-reg {
+
+ 0% {
+ 		transform: translateY(-600px);
+ }
+
+ 100% {
+		transform: translateY(0);
+ }
+
+}
+
+@keyframes close-reg {
+	
+ 0% {
+ 		transform: translateY(0);
+ }
+
+ 100% {
+		transform: translateY(-600px);
+ }
+
 }
 
 .login-register__login,
@@ -14,20 +64,82 @@
 	border-radius: 22px;
 	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	cursor: pointer;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	transition: 0.3s;
+	text-align: center;
+
+	&:active {
+		opacity: 0.5;
+		transform: scale(0.95);
+	}
 }
 
 .login-register__register {
-	padding: 7px 20px;
+	padding: 9px 19px;
+	@include bold-standart-font-color-white;
 }
 
 .login-register__login {
 	padding: 2px;
-	text-transform: uppercase;
 	@include bold-standart-font-color-purple;
+	margin-bottom: 10%;
 }
 
 .login-register__login-overlay {
 	background-color: #fff;
-	padding: 7px 20px;
+	padding: 7px 18px;
 	border-radius: 22px;
+}
+
+@media (min-width: $tablet) {
+
+	.login-register	{
+		position: static;
+		display: flex;
+		justify-content: center;
+		animation-name: none;
+		padding: 0;
+		width: auto;
+
+		&--header {
+			margin-left: 28px;
+			margin-top: 0; 
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.login-register__login,
+	.login-register__register {
+
+		&:focus,
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 0.5;
+			transform: scale(0.95);
+		}
+	}
+
+}
+
+@media (min-width: $bigdesktop) {
+
+	.login-register__wrapper {
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 200px;
+		align-items: center;
+	}
+	
+	.login-register__login {
+		margin-bottom: 0;
+	}
+
 }

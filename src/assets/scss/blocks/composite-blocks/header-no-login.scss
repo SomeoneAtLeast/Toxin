@@ -1,6 +1,6 @@
 .main-header {
 	background-color: #fff;
-	padding: 12px 0;
+	position: relative;
 
 	&--margin {
 		margin-top: 7.9%;
@@ -14,6 +14,10 @@
 }
 
 @media (min-width: $tablet) {
+
+	.main-header {
+		padding: 12px 0;
+	}
 
 	.main-header__wrapper {
 		width: 60.9%;
