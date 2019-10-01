@@ -24,3 +24,5 @@ menu_open_btn.addEventListener("click", function (evt) {
 			}, 300);
 	}
 })
+
+console.log("2");

@@ -10,8 +10,10 @@ const PATHS = {
   assets: 'assets/'
 }
 
-const PAGES_DIR = `${PATHS.src}/pug/pages/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+const PAGES_DIR_1 = `${PATHS.src}/pug/pages/main-pages`
+const PAGES_DIR_2 = `${PATHS.src}/pug/pages/ui-kit-pages`
+const PAGES_1 = fs.readdirSync(PAGES_DIR_1).filter(fileName => fileName.endsWith('.pug'))
+const PAGES_2 = fs.readdirSync(PAGES_DIR_2).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
   externals: {
@@ -34,11 +36,12 @@ module.exports = {
       loader: 'babel-loader',
       exclude: '/node_modules/'
     }, {
-    test: /\.(jpe?g|png|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/, 
-    loader: 'url-loader?limit=100000',
-      options: {
-        name: '[name].[ext]'
-      }
+    test: /\.(eot|svg|ttf|woff|woff2)$/,
+       use: [
+             {
+                 loader: 'file-loader?name=../fonts/montserrat/[name].[ext]'
+             }
+         ]
     }, {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
@@ -73,8 +76,13 @@ module.exports = {
       { from: `${PATHS.src}/static`, to: '' },
     ]),
 
-    ...PAGES.map(page => new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/${page}`,
+    ...PAGES_1.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR_1}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    })),
+
+    ...PAGES_2.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR_2}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
     }))
   ],
