@@ -7,6 +7,13 @@
 	}
 }
 
+.main-header + .main-header {
+
+	&--margin {
+		margin-top: 450px;
+	}
+}
+
 .main-header__wrapper {
 	display: flex;
 	justify-content: center;
@@ -14,6 +21,13 @@
 }
 
 @media (min-width: $tablet) {
+
+	.main-header + .main-header {
+
+		&--margin {
+			margin-top: 38px;
+		}
+	}
 
 	.main-header {
 		padding: 12px 0;

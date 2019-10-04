@@ -6,8 +6,7 @@ body {
 	max-width: 1920px;
 	overflow: scroll;
 	background-color: #E5E5E5;
-	font-family: 'Montserrat-Regular', sans-serif;
-	color: $standart-font-color;
+	@include standart-font-and-color;
 	font-size: 14px;
 	line-height: 17px;
 }
@@ -41,8 +40,9 @@ img {
 } 
 
 @import "./normalize/normalize.scss";
-@import "./blocks/composite-blocks/header-no-login.scss";
+@import "./pages/headers-and-footers.scss";
+@import "./blocks/composite-blocks/header.scss";
 @import "./blocks/independent-blocks/logo.scss";
 @import "./blocks/independent-blocks/main-nav.scss";
 @import "./blocks/independent-blocks/login-register.scss";
-@import "./pages/headers-and-footers.scss";
+@import "./blocks/independent-blocks/successful-login.scss";

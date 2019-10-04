@@ -1,3 +1,9 @@
+@mixin standart-font-and-color () {
+	font-family: 'Montserrat-Regular', sans-serif;
+	color: $standart-font-color;
+} 
+
+
 @mixin bold-standart-font-no-color () {
 	font-family: 'Montserrat-bold', sans-serif;
 } 

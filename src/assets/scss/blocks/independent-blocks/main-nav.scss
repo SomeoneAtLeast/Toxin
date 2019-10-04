@@ -132,6 +132,7 @@
 
 .main-nav__list-link {
 	display: block;
+	@include standart-font-and-color;
 	padding: 15px 0 15px 0;
 	text-align: center;
 	transition: 0.5s;
@@ -203,8 +204,8 @@
 		color: $active-font-color;
 		transition: 0.1s;
 		box-shadow: none;
+		}
 	}
-}
 }
 
 @media (min-width: $desktop) {
@@ -219,7 +220,6 @@
 	}
 
 	.main-nav__list-link {
-		cursor: pointer;
 		transition: 0.3;
 
 		&:hover,
