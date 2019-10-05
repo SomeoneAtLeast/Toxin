@@ -1,0 +1,16 @@
+.main-footer {
+	background-color: $white-color;
+	padding: 104px 0 100px 0;
+
+	&--margin {
+		margin-top: 38px;
+	}
+}
+
+@media (min-width: $tablet) {
+
+	.footer-wrapper {
+		width: 60.9%;
+		margin: 0 auto;
+	}
+}
