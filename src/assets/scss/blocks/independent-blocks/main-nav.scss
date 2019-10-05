@@ -124,7 +124,6 @@
 	background-color: #fff;
 
 	&--here {
-		@include bold-standart-font-color-black;
 		pointer-events: none;
 		cursor: default;
 	}
@@ -137,6 +136,10 @@
 	text-align: center;
 	transition: 0.5s;
 
+	&--here {
+		@include bold-standart-font-color-black;
+	}
+
 	&:active {
 		color: $hover-focus-font-color;
 		transition: 0.1s;
@@ -144,6 +147,8 @@
 		0 0 0 4px $active-font-color inset;
 	}
 }
+
+
 
 @media (min-width: $tablet) {
 

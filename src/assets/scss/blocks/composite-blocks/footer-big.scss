@@ -1,16 +1,17 @@
 .main-footer {
 	background-color: $white-color;
-	padding: 104px 0 100px 0;
+	padding: 100px 0 100px 0;
 
 	&--margin {
-		margin-top: 38px;
+		margin-top: 40px;
 	}
 }
 
 @media (min-width: $tablet) {
 
-	.footer-wrapper {
+	.main-footer__footer-wrapper {
 		width: 60.9%;
 		margin: 0 auto;
+		display: flex;
 	}
 }
