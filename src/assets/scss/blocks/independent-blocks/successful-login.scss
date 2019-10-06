@@ -2,20 +2,18 @@
 	display: none;
 	background-color: $white-color;
 	width: 100%;
+	top: 352px;
 
 	&--nojs {
-		position: absolute;
-		top: 352px;
 		display: flex;
 		justify-content: center;
 	}
 }
 
 .open-succes-log {
-	position: absolute;
-	top: 352px;
 	display: flex;
 	justify-content: center;
+	position: absolute;
 	animation-name: show-reg;
 	animation-duration: 0.8s;
 }

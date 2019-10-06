@@ -1,0 +1,30 @@
+.second-nav__title {
+	margin: 0 0 12px 0;
+	@include third-level-title;
+}
+
+.second-nav__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.second-nav__list-item {
+
+}
+
+.second-nav__list-link {
+	display: block;
+	padding: 10px 0;
+}
+
+@media (min-width: $tablet) {
+
+	.second-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+	}
+
+	.second-nav__list-wrapper {}
+}

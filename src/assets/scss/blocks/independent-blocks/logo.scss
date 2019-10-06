@@ -12,6 +12,13 @@
 	// }
 }
 
+.main-footer .logo {
+
+	&--footer {
+		padding-top: 15px;
+	}
+}
+
 .main-header .logo {
 
 	&--header {
@@ -47,6 +54,13 @@
 			padding-top: 0;
 			padding-bottom: 0;
 			margin-right: 20px;
+		}
+	}
+
+	.main-footer .logo {
+
+		&--footer {
+			padding-top: 0;
 		}
 	}
 }
