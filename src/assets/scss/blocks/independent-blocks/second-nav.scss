@@ -1,6 +1,11 @@
+.second-nav__list-wrapper {
+	margin-top: 20px;
+}
+
 .second-nav__title {
 	margin: 0 0 12px 0;
 	@include third-level-title;
+	text-align: center;
 }
 
 .second-nav__list {
@@ -15,7 +20,17 @@
 
 .second-nav__list-link {
 	display: block;
+	text-align: center;
 	padding: 10px 0;
+	@include standart-font-and-color;
+	transition: 0.5s;
+
+	&:active {
+		color: $hover-focus-font-color;
+		transition: 0.1s;
+		box-shadow: 0 0 0 2px #fff inset,
+		0 0 0 4px $active-font-color inset;
+	}
 }
 
 @media (min-width: $tablet) {
@@ -26,5 +41,37 @@
 		width: 50%;
 	}
 
-	.second-nav__list-wrapper {}
+	.second-nav__list-wrapper:not(:last-child) {
+		margin-right: 10%;
+	}
+
+	.second-nav__title {
+		text-align: left;
+	}
+
+	.second-nav__list-link {
+		transition: 0.3s;
+		text-align: left;
+
+		&:active {
+			color: $active-font-color;
+			box-shadow: none;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.second-nav__list-link {
+		transition: 0.3s;
+
+		&:hover,
+		&:focus {
+			color: $hover-focus-font-color;
+		}
+
+		&:active {
+			color: $active-font-color;
+		}
+	}
 }
