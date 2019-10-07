@@ -21,7 +21,7 @@
 .second-nav__list-link {
 	display: block;
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px 0 11px 0;
 	@include standart-font-and-color;
 	transition: 0.5s;
 
@@ -38,11 +38,21 @@
 	.second-nav {
 		display: flex;
 		justify-content: space-between;
-		width: 50%;
+		padding-top: 4px;
+		width: 44.2%;
+
+		&--footer {
+			margin-left: 3.4%;
+			margin-right: 3.4%;
+		}
 	}
 
-	.second-nav__list-wrapper:not(:last-child) {
-		margin-right: 10%;
+	.second-nav__list-wrapper {
+		margin-top: 0;
+
+		&:not(:last-child) {
+			margin-right: 5%;
+		}
 	}
 
 	.second-nav__title {
@@ -50,6 +60,7 @@
 	}
 
 	.second-nav__list-link {
+		min-width: 84px;
 		transition: 0.3s;
 		text-align: left;
 
@@ -72,6 +83,24 @@
 
 		&:active {
 			color: $active-font-color;
+		}
+	}
+}
+
+@media (min-width: $superbigdesktop) {
+
+	.second-nav {
+		justify-content: flex-start;
+	}
+
+	.second-nav__list-wrapper {
+
+		&:first-child {
+			margin-right: 22.5%;
+		}
+
+		&:last-child {
+			margin-left: auto;
 		}
 	}
 }

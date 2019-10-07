@@ -1,0 +1,46 @@
+.subscribe {
+
+	&--footer {
+		margin-top: 20px;
+	}
+}
+
+
+.subscribe__title {
+	margin: 0 0 19px 0;
+	@include third-level-title;
+	text-align: center;
+}
+
+.subscribe__main-text {
+	font-size: 13.7px;
+	line-height: 24px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	color: $rich-standart-font-color;
+}
+
+@media (min-width: $tablet) {
+
+	.subscribe {
+		width: 22.4%;
+		padding-top: 4px;
+
+		&--footer {
+			margin-top: 0;
+			margin-left: auto;
+		}
+	}
+
+	.subscribe__title {
+		text-align: left;
+	}
+
+	.subscribe__main-text {
+		text-align: left;
+		width: auto;
+		margin: auto;
+	}
+
+}
