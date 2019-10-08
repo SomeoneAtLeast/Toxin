@@ -18,5 +18,19 @@
 		max-width: 260px;
 		margin: 0;
 		text-align: left;
+
+		&--footer {
+			margin-right: 5%;
+		}
+	}
+}
+
+@media (min-width: $superbigdesktop) {
+
+	.about-toxin  {
+
+		&--footer {
+			margin-right: 0;
+		}
 	}
 }

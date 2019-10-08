@@ -1,9 +1,11 @@
 let menu_open_btn = document.querySelector(".main-nav__btn");
 let main_nav__list = document.querySelector(".main-nav__list");
+let subscribe__form =  document.querySelector(".subscribe__form");
+let subscribe__email_input =  document.querySelector(".subscribe__form-input");
 
-if (document.querySelector(".js-off") !== null && document.querySelector(".js-off").classList.contains("js-off")) {
-	console.log("Страница с шаблонами элементов, JS выключен");
-} else {
+// if (document.querySelector(".js-off") !== null && document.querySelector(".js-off").classList.contains("js-off")) {
+// 	console.log("Страница с шаблонами элементов, JS выключен");
+// } else {
 
 	main_nav__list.classList.remove("nojs");
 
@@ -64,4 +66,23 @@ if (document.querySelector(".js-off") !== null && document.querySelector(".js-of
 			}
 		})
 	}
-}
+
+	subscribe__form.addEventListener("submit", function (evt) {
+		if (!subscribe__email_input.value) {
+			    evt.preventDefault();
+			    subscribe__email_input.classList.add("subscribe__form-input--wrong");
+			    subscribe__email_input.addEventListener("click", function (evt) {
+				subscribe__email_input.classList.remove("subscribe__form-input--wrong"); 
+				}
+			)    	
+		}
+	})
+
+	subscribe__email_input.onblur = function() {
+	if (subscribe__email_input.value) {
+ 		subscribe__email_input.classList.add("subscribe__form-input--active");
+ 		 } else {
+ 		 	subscribe__email_input.classList.remove("subscribe__form-input--active");
+ 		 }
+	} 
+// }

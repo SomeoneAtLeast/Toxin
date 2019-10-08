@@ -37,6 +37,7 @@
 
 	.second-nav {
 		display: flex;
+		order: 1;
 		justify-content: space-between;
 		padding-top: 4px;
 		width: 44.2%;
@@ -73,6 +74,9 @@
 
 @media (min-width: $desktop) {
 
+	.second-nav {
+		order: 0;
+	}
 	.second-nav__list-link {
 		transition: 0.3s;
 
