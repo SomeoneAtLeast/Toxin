@@ -1,0 +1,18 @@
+.copyright-and-social {
+	border-top: 1px solid  $super-weak-standard-font-color;
+}
+
+.copyright-and-social__copyright {
+	color: $rich-standart-font-color;
+	margin: 27px 0 0 0;
+}
+
+@media (min-width: $tablet) {
+
+	.copyright-and-social__wrapper {
+		width: 60.9%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+}
