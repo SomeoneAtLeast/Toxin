@@ -1,17 +1,35 @@
 .main-footer {
 	background-color: $white-color;
-	padding: 100px 0 100px 0;
+
+	&--margin {
+		margin-top: 100px;
+	}
+}
+
+.main-footer__footer-wrapper {
+
+}
+
+@media (min-width: $tablet) {
+
+	.main-footer {
+		padding: 100px 0 0 0;
 
 	&--margin {
 		margin-top: 40px;
 	}
 }
+	.main-footer__footer-wrapper {
+		width: 80%;
+		margin: 0 auto 89px auto;
+		display: flex;
+		justify-content: space-between;
+	}
+}
 
-@media (min-width: $tablet) {
+@media (min-width: $bigdesktop)  {
 
 	.main-footer__footer-wrapper {
 		width: 60.9%;
-		margin: 0 auto;
-		display: flex;
 	}
 }

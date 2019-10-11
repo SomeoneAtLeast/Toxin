@@ -1,9 +1,36 @@
-.about-toxin  {
-	max-width: 260px;
-}
-
 .about-toxin__main-text {
-	font-size: 14px;
+	font-size: 13.7px;
 	line-height: 24px;
 	color: $rich-standart-font-color;
+	margin-top: 17px;
+}
+
+.about-toxin  {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media (min-width: $tablet) {
+
+	.about-toxin  {
+		width: auto;
+		max-width: 260px;
+		margin: 0;
+		text-align: left;
+
+		&--footer {
+			margin-right: 5%;
+		}
+	}
+}
+
+@media (min-width: $superbigdesktop) {
+
+	.about-toxin  {
+
+		&--footer {
+			margin-right: 0;
+		}
+	}
 }

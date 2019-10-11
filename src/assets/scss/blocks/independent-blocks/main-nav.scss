@@ -79,6 +79,7 @@
 
 .nojs {
 	display: block;
+	position: static;
 }
 
 .open-menu {
@@ -204,10 +205,10 @@
 	display: block;
 	padding: 15px 0 15px 0;
 	text-align: center;
+	transition: 0.3s;
 
 	&:active {
 		color: $active-font-color;
-		transition: 0.1s;
 		box-shadow: none;
 		}
 	}
@@ -225,7 +226,6 @@
 	}
 
 	.main-nav__list-link {
-		transition: 0.3;
 
 		&:hover,
 		&:focus {

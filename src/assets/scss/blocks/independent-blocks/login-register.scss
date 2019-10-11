@@ -2,12 +2,13 @@
 	padding-top: 13px;
 	padding-bottom: 18px;
 	display: none;
+	position: absolute;
+	top: 344px;
 	background-color: $white-color;
 	width: 100%;
 
 	&--nojs {
-		position: absolute;
-		top: 344px;
+		position: static;
 		display: flex;
 		justify-content: center;
 	}
@@ -21,7 +22,6 @@
 
 .open-reg {
 	position: absolute;
-	top: 344px;
 	display: flex;
 	justify-content: center;
 	animation-name: show-reg;

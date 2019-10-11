@@ -1,3 +1,4 @@
+@import "./utils/fonts.scss";
 @import "./variables/variables.scss";
 @import "./mixins/mixins.scss";
 
@@ -29,16 +30,6 @@ img {
 	margin: -1px;
 }
 
-@font-face {
-	font-family: Montserrat-Regular; 
-	src: url("../fonts/montserrat/Montserrat-Regular.ttf");
-} 
-
-@font-face {
-	font-family: Montserrat-Bold; 
-	src: url("../fonts/montserrat/Montserrat-Bold.ttf");
-} 
-
 @import "./normalize/normalize.scss";
 @import "./pages/headers-and-footers.scss";
 @import "./blocks/composite-blocks/header.scss";
@@ -48,3 +39,8 @@ img {
 @import "./blocks/independent-blocks/successful-login.scss";
 @import "./blocks/composite-blocks/footer-big.scss";
 @import "./blocks/composite-blocks/about-toxin.scss";
+@import "./blocks/independent-blocks/second-nav.scss";
+@import "./blocks/independent-blocks/subscribe.scss";
+@import "./blocks/composite-blocks/copyright-and-social.scss";
+@import "./blocks/independent-blocks/copyright.scss";
+@import "./blocks/independent-blocks/social-btns.scss";

@@ -1,0 +1,114 @@
+.second-nav__list-wrapper {
+	margin-top: 20px;
+}
+
+.second-nav__title {
+	margin: 0 0 12px 0;
+	@include third-level-title;
+	text-align: center;
+}
+
+.second-nav__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.second-nav__list-item {
+
+}
+
+.second-nav__list-link {
+	display: block;
+	text-align: center;
+	padding: 10px 0 11px 0;
+	@include standart-font-and-color;
+	transition: 0.5s;
+
+	&:active {
+		color: $hover-focus-font-color;
+		transition: 0.1s;
+		box-shadow: 0 0 0 2px #fff inset,
+		0 0 0 4px $active-font-color inset;
+	}
+}
+
+@media (min-width: $tablet) {
+
+	.second-nav {
+		display: flex;
+		order: 1;
+		justify-content: space-between;
+		padding-top: 4px;
+		width: 44.2%;
+
+		&--footer {
+			margin-left: 3.4%;
+		}
+	}
+
+	.second-nav__list-wrapper {
+		margin-top: 0;
+
+		&:not(:last-child) {
+			margin-right: 5%;
+		}
+	}
+
+	.second-nav__title {
+		text-align: left;
+	}
+
+	.second-nav__list-link {
+		min-width: 84px;
+		transition: 0.3s;
+		text-align: left;
+
+		&:active {
+			color: $active-font-color;
+			box-shadow: none;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.second-nav {
+		order: 0;
+
+		&--footer {
+			margin-right: 3.4%;
+		}
+	}
+
+	.second-nav__list-link {
+		transition: 0.3s;
+
+		&:hover,
+		&:focus {
+			color: $hover-focus-font-color;
+		}
+
+		&:active {
+			color: $active-font-color;
+		}
+	}
+}
+
+@media (min-width: $superbigdesktop) {
+
+	.second-nav {
+		justify-content: flex-start;
+	}
+
+	.second-nav__list-wrapper {
+
+		&:first-child {
+			margin-right: 22.5%;
+		}
+
+		&:last-child {
+			margin-left: auto;
+		}
+	}
+}

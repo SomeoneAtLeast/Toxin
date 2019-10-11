@@ -5,11 +5,13 @@
 	background-color: $white-color;
 	z-index: 1000;
 	position: relative;
+}
 
-	// &--header {
-	// 	padding-top: 15px;
-	// 	padding-bottom: 15px;
-	// }
+.main-footer .logo {
+
+	&--footer {
+		padding-top: 15px;
+	}
 }
 
 .main-header .logo {
@@ -47,6 +49,13 @@
 			padding-top: 0;
 			padding-bottom: 0;
 			margin-right: 20px;
+		}
+	}
+
+	.main-footer .logo {
+
+		&--footer {
+			padding-top: 0;
 		}
 	}
 }
