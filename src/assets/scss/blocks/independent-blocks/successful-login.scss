@@ -30,6 +30,7 @@
 
 .successful-login__user-name {
 	width: 100%;
+	@include standart-font-and-color;
 	padding-top: 13px;
 	padding-bottom: 13px;
 	text-align: center;

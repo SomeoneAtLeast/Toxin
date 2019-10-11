@@ -1,3 +1,9 @@
+.about-toxin  {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .about-toxin__main-text {
 	font-size: 13.7px;
 	line-height: 24px;
@@ -5,10 +11,8 @@
 	margin-top: 17px;
 }
 
-.about-toxin  {
-	width: 60%;
-	margin: 0 auto;
-	text-align: center;
+.second-footer .about-toxin__main-text {
+	font-size: 14px;
 }
 
 @media (min-width: $tablet) {
@@ -22,6 +26,12 @@
 		&--footer {
 			margin-right: 5%;
 		}
+	}
+
+	.second-footer .about-toxin {
+		max-width: 540px;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 
