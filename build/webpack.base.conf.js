@@ -35,18 +35,17 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
-    }, {
-    test: /\.(eot|svg|ttf|woff|woff2)$/,
-       use: [
-             {
-                 loader: 'file-loader?name=../fonts/montserrat/[name].[ext]'
-             }
-         ]
+    },  {
+      test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: 'assets/fonts/montserrat/[name].[ext]'
+      }
     }, {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
-        name: '[name].[ext]'
+        name: 'assets/img/[name].[ext]'
       }
     }, {
       test: /\.scss$/,
@@ -68,11 +67,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/[name].css`,
+      filename: `[name].css`,
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
+      // { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ]),
 

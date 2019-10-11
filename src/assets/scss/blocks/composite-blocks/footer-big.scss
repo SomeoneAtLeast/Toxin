@@ -13,16 +13,23 @@
 @media (min-width: $tablet) {
 
 	.main-footer {
-		padding: 100px 0 110px 0;
+		padding: 100px 0 0 0;
 
 	&--margin {
 		margin-top: 40px;
 	}
 }
 	.main-footer__footer-wrapper {
-		width: 60.9%;
+		width: 80%;
 		margin: 0 auto 89px auto;
 		display: flex;
 		justify-content: space-between;
+	}
+}
+
+@media (min-width: $bigdesktop)  {
+
+	.main-footer__footer-wrapper {
+		width: 60.9%;
 	}
 }

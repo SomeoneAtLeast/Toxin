@@ -44,7 +44,6 @@
 
 		&--footer {
 			margin-left: 3.4%;
-			margin-right: 3.4%;
 		}
 	}
 
@@ -76,7 +75,12 @@
 
 	.second-nav {
 		order: 0;
+
+		&--footer {
+			margin-right: 3.4%;
+		}
 	}
+
 	.second-nav__list-link {
 		transition: 0.3s;
 
