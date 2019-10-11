@@ -4,7 +4,6 @@
 
 body {
 	min-width: 320px;
-	max-width: 1920px;
 	overflow: scroll;
 	background-color: #E5E5E5;
 	@include standart-font-and-color;
@@ -44,3 +43,4 @@ img {
 @import "./blocks/composite-blocks/copyright-and-social.scss";
 @import "./blocks/independent-blocks/copyright.scss";
 @import "./blocks/independent-blocks/social-btns.scss";
+@import "./blocks/composite-blocks/second-footer.scss";

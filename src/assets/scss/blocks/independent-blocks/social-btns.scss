@@ -3,7 +3,11 @@
 	width: 112px;
 	justify-content: space-between;
 	align-items: center;
-	margin: 15px auto 0 auto;
+
+	&--footer {
+		margin: 15px auto 0 auto;
+	}
+
 }
 
 .social-btns__btn {
@@ -39,9 +43,18 @@
 		width: 112px;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0;
+
+		&--footer {
+			margin: 0;
+		}
 	}
 
+	.second-footer__footer-wrapper .social-btns {
+
+		&--footer {
+			margin: 28px auto 0 auto;
+		}
+	}
 }
 
 @media (min-width: $bigdesktop) {
