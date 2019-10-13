@@ -1,18 +1,30 @@
 // Размеры экранов
+
 $tablet: 855px;
 $desktop: 1200px;
 $bigdesktop: 1449px;
 $superbigdesktop: 1860px;
 
-// Цвета текста ссылок и кнопок
-$super-weak-standard-font-color: rgba(31, 32, 65, 0.15);
-$weak-standard-font-color: rgba(31, 32, 65, 0.25);
-$standart-font-color: rgba(31, 32, 65, 0.5);
-$rich-standart-font-color: rgba(31, 32, 65, 0.75);
-$very-rich-standart-font-color: rgba(31, 32, 65, 1);
-$active-font-color: rgba(31, 32, 65, 0.1);
-$hover-focus-font-color: rgba(31, 32, 65, 0.3);
-$purple-color: #BC9CFF;
+// Цвета текста и рамок
+
+$main-font-color-100: rgba(31, 32, 65, 1);
+$main-font-color-75: rgba(31, 32, 65, 0.75);
+$main-font-color-50: rgba(31, 32, 65, 0.5);
+$main-font-color-30: rgba(31, 32, 65, 0.3);
+$main-font-color-25: rgba(31, 32, 65, 0.25);
+$main-font-color-15: rgba(31, 32, 65, 0.15);
+$main-font-color-10: rgba(31, 32, 65, 0.1);
+$main-font-color-05: rgba(31, 32, 65, 0.05);
+
+// Цвета кнопок
+
+$purple-color-1: #BC9CFF;
 $purple-color-2: #8ba4f9;
+
+// Фоновые цвета
+
 $white-color: #fff;
+
+// Цвета валидации форм
+
 $wrong-color: rgb(255, 0, 0);

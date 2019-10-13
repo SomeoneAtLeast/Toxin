@@ -1,3 +1,4 @@
+@import "./normalize/normalize.scss";
 @import "./utils/fonts.scss";
 @import "./variables/variables.scss";
 @import "./mixins/mixins.scss";
@@ -7,8 +8,6 @@ body {
 	overflow: scroll;
 	background-color: #E5E5E5;
 	@include standart-font-and-color;
-	font-size: 14px;
-	line-height: 17px;
 }
 
 a {
@@ -29,18 +28,17 @@ img {
 	margin: -1px;
 }
 
-@import "./normalize/normalize.scss";
-@import "./pages/headers-and-footers.scss";
-@import "./blocks/composite-blocks/header.scss";
-@import "./blocks/independent-blocks/logo.scss";
-@import "./blocks/independent-blocks/main-nav.scss";
-@import "./blocks/independent-blocks/login-register.scss";
-@import "./blocks/independent-blocks/successful-login.scss";
-@import "./blocks/composite-blocks/footer-big.scss";
-@import "./blocks/composite-blocks/about-toxin.scss";
-@import "./blocks/independent-blocks/second-nav.scss";
-@import "./blocks/independent-blocks/subscribe.scss";
-@import "./blocks/composite-blocks/copyright-and-social.scss";
-@import "./blocks/independent-blocks/copyright.scss";
-@import "./blocks/independent-blocks/social-btns.scss";
-@import "./blocks/composite-blocks/second-footer.scss";
+@import "../../pages/ui-kit-pages/headers-and-footers/headers-and-footers.scss";
+@import "../../blocks/header/header.scss";
+@import "../../blocks/logo/logo.scss";
+@import "../../blocks/main-nav/main-nav.scss";
+@import "../../blocks/login-register/login-register.scss";
+@import "../../blocks/successful-login/successful-login.scss";
+@import "../../blocks/footer-big/footer-big.scss";
+@import "../../blocks/about-toxin/about-toxin.scss";
+@import "../../blocks/second-nav/second-nav.scss";
+@import "../../blocks/subscribe/subscribe.scss";
+@import "../../blocks/copyright-and-social/copyright-and-social.scss";
+@import "../../blocks/copyright/copyright.scss";
+@import "../../blocks/social-btns/social-btns.scss";
+@import "../../blocks/second-footer/second-footer.scss";

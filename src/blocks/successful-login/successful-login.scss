@@ -1,0 +1,98 @@
+.successful-login {
+	display: none;
+	background-color: $white-color;
+	width: 100%;
+	top: 352px;
+
+	&--nojs {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.open-succes-log {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	animation-name: show-reg;
+	animation-duration: 0.8s;
+}
+
+.close-succes-log {
+	animation-name: close-reg;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+.successful-login__border {
+	display: none;
+}
+
+.successful-login__user-name {
+	width: 100%;
+	@include standart-font-and-color-50;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:active {
+		color: $main-font-color-30;
+		transition: 0.1s;
+		box-shadow: 0 0 0 2px #fff inset,
+		0 0 0 4px $main-font-color-10 inset;
+	}
+}
+
+@media (min-width: $tablet) {
+
+	.successful-login	{
+		position: static;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		animation-name: none;
+		padding: 0;
+		width: 144px;
+
+		&--header {
+			margin-left: 32px;
+			margin-top: 0; 
+		}
+	}
+
+	.successful-login__border {
+		display: block;
+		width: 1px;
+		padding: 15px 0;
+		background-color: $main-font-color-10;
+	}
+
+	.successful-login__user-name {
+		width: auto;
+		margin-left: 15px;
+
+		&:active {
+			color: $main-font-color-10;
+			transition: 0.1s;
+			box-shadow: none;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.successful-login__user-name {
+		transition: 0.3;
+
+		&:hover,
+		&:focus {
+			color: $main-font-color-30;
+		}
+
+		&:active {
+			color: $main-font-color-10;
+		}
+	}	
+}

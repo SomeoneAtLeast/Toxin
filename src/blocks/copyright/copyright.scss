@@ -1,0 +1,22 @@
+.copyright {
+	color: $main-font-color-75;
+
+	&--copyright-and-social {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+
+@media (min-width: $tablet) {
+
+	.copyright {
+
+		&--copyright-and-social {
+			width: auto;
+			margin: 0;
+			text-align: left;
+			}
+		}
+}

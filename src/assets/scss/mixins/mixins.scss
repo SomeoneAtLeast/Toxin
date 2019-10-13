@@ -1,28 +1,57 @@
+// Цвет и шрифт body
+
+@mixin standart-font-and-color () {
+	font-family: 'Montserrat-Regular', sans-serif;
+	color: $main-font-color-75;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+// Заголовки
+
+@mixin first-level-title () {
+	font-family: Quicksand-Bold, sans-serif; 
+	color: $main-font-color-100;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+@mixin second-level-title () {
+	font-family: Quicksand-Bold, sans-serif; 
+	color: $main-font-color-100;
+	font-size: 19px;
+	line-height: 24px;
+}
+
 @mixin third-level-title () {
 	font-family: 'Montserrat-bold', sans-serif;
-	color: $very-rich-standart-font-color;
+	color: $main-font-color-100;
 	font-size: 11.3px;
 	line-height: 15px;
 	text-transform: uppercase;
 }
 
-@mixin standart-font-and-color () {
+// Стандартный шрифт разных цветов
+
+@mixin standart-font-and-color-50 () {
 	font-family: 'Montserrat-Regular', sans-serif;
-	color: $standart-font-color;
+	color: $main-font-color-50;
 } 
+
+// Насыщенный стандартный шрифт разных цветов
 
 @mixin bold-standart-font-no-color () {
 	font-family: 'Montserrat-bold', sans-serif;
 } 
 
-@mixin bold-standart-font-color-black () {
+@mixin bold-standart-font-color-75 () {
 	font-family: 'Montserrat-bold', sans-serif;
-	color: $rich-standart-font-color;
+	color: $main-font-color-75;
 } 
 
 @mixin bold-standart-font-color-purple () {
 	font-family: 'Montserrat-bold', sans-serif;
-	color: $purple-color;
+	color: $purple-color-1;
 }
 
 @mixin bold-standart-font-color-white () {

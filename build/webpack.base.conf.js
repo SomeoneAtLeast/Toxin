@@ -10,10 +10,15 @@ const PATHS = {
   assets: 'assets/'
 }
 
-const PAGES_DIR_1 = `${PATHS.src}/pug/pages/main-pages`
-const PAGES_DIR_2 = `${PATHS.src}/pug/pages/ui-kit-pages`
+const PAGES_DIR_1 = `${PATHS.src}/pages/main-pages`
+const PAGES_DIR_2 = `${PATHS.src}/pages/ui-kit-pages/headers-and-footers`
 const PAGES_1 = fs.readdirSync(PAGES_DIR_1).filter(fileName => fileName.endsWith('.pug'))
 const PAGES_2 = fs.readdirSync(PAGES_DIR_2).filter(fileName => fileName.endsWith('.pug'))
+
+const IMG_DIRS = fs
+  .readdirSync(`${PATHS.src}/blocks`)
+  .filter((dirName) => fs.lstatSync(`${PATHS.src}/blocks/${dirName}`).isDirectory());
+
 
 module.exports = {
   externals: {
@@ -39,7 +44,7 @@ module.exports = {
       test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'file-loader',
       options: {
-        name: 'assets/fonts/montserrat/[name].[ext]'
+        name: 'assets/fonts/[name].[ext]'
       }
     }, {
       test: /\.(png|jpg|gif|svg)$/,
@@ -73,6 +78,9 @@ module.exports = {
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
       // { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
+          ...IMG_DIRS.map((item) => {
+        return { context: `${PATHS.src}/blocks/${item}/img`, from: '**/*', to: './assets/img' };
+      })
     ]),
 
     ...PAGES_1.map(page => new HtmlWebpackPlugin({
@@ -83,6 +91,6 @@ module.exports = {
     ...PAGES_2.map(page => new HtmlWebpackPlugin({
       template: `${PAGES_DIR_2}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
-    }))
+    })),
   ],
 }
