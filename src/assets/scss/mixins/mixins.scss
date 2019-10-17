@@ -57,4 +57,10 @@
 @mixin bold-standart-font-color-white () {
 	font-family: 'Montserrat-bold', sans-serif;
 	color: $white-color;
-} 
+}
+
+// Quicksand
+
+@mixin second-font () {
+	font-family: 'Quicksand-Regular', sans-serif;
+}

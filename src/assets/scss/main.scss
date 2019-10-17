@@ -29,6 +29,7 @@ img {
 }
 
 @import "../../pages/ui-kit-pages/headers-and-footers/headers-and-footers.scss";
+@import "../../pages/ui-kit-pages/color-and-type/color-and-type.scss";
 @import "../../blocks/header/header.scss";
 @import "../../blocks/logo/logo.scss";
 @import "../../blocks/main-nav/main-nav.scss";
@@ -42,3 +43,6 @@ img {
 @import "../../blocks/copyright/copyright.scss";
 @import "../../blocks/social-btns/social-btns.scss";
 @import "../../blocks/second-footer/second-footer.scss";
+@import "../../blocks/colors/colors.scss";
+@import "../../blocks/main-font-color-100/main-font-color.scss";
+@import "../../blocks/fonts-and-tags/fonts-and-tags.scss";

@@ -12,8 +12,10 @@ const PATHS = {
 
 const PAGES_DIR_1 = `${PATHS.src}/pages/main-pages`
 const PAGES_DIR_2 = `${PATHS.src}/pages/ui-kit-pages/headers-and-footers`
+const PAGES_DIR_3 = `${PATHS.src}/pages/ui-kit-pages/color-and-type`
 const PAGES_1 = fs.readdirSync(PAGES_DIR_1).filter(fileName => fileName.endsWith('.pug'))
 const PAGES_2 = fs.readdirSync(PAGES_DIR_2).filter(fileName => fileName.endsWith('.pug'))
+const PAGES_3 = fs.readdirSync(PAGES_DIR_3).filter(fileName => fileName.endsWith('.pug'))
 
 const IMG_DIRS = fs
   .readdirSync(`${PATHS.src}/blocks`)
@@ -92,5 +94,10 @@ module.exports = {
       template: `${PAGES_DIR_2}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
     })),
+
+    ...PAGES_3.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR_3}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    }))
   ],
 }

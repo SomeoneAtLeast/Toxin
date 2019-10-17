@@ -1,0 +1,15 @@
+.color-and-type__main	{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 70px auto 0 auto;
+}
+
+@media (min-width: $tablet) {
+
+	.color-and-type__main	{
+		justify-content: space-between;
+		width: 59.9%;
+		margin: 145px auto 0 auto;
+	}
+}
