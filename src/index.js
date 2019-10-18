@@ -1,3 +1,3 @@
 import './blocks/header/header.js'
-import './blocks/footer-big/footer-big.js'
+import './blocks/subscribe/subscribe.js'
 import './assets/scss/main.scss'

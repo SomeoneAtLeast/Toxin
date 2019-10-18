@@ -30,47 +30,6 @@
 	margin: 0 auto;
 }
 
-.subscribe__form-input {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 9px 10px 9px 15px;
-	font-size: 14px;
-	line-height: 24px;
-	color: $main-font-color-25;
-	border: 1px solid $main-font-color-25;
-	border-radius: 4px;
-	transition: 0.5s;
-
-	&:focus {
-		color: $main-font-color-75;
-		border: 1px solid $main-font-color-75;
-	}
-
-	&:focus::placeholder  {
-		color: $main-font-color-75;
-	}
-
-	&--wrong {
-		border: 1px solid $wrong-color;
-		color: $wrong-color;
-	}
-
-	&--wrong::placeholder  {
-		color: $wrong-color;
-	}
-
-	&--wrong:focus,
-	&--wrong:hover {
-		border: 1px solid $wrong-color;
-		color: $wrong-color;
-	}
-
-	&--active {
-		color: $main-font-color-75;
-		border: 1px solid $main-font-color-75;
-	}
-}
-
 .subscribe__form-btn {
 	position: absolute;
 	width: 44px;
@@ -154,32 +113,6 @@
 
 		&--footer {
 			margin-left: 5%;
-		}
-	}
-
-	.subscribe__form-input {
-
-		&:hover {
-			color: $main-font-color-75;
-			border: 1px solid $main-font-color-75;
-		}
-
-		&:hover::placeholder  {
-			color: $main-font-color-75;
-		}
-
-		&--wrong::placeholder  {
-			color: $wrong-color;
-		}
-
-		&--wrong:hover::placeholder  {
-			color: $wrong-color;
-		}
-
-		&--wrong:focus,
-		&--wrong:hover {
-			border: 1px solid $wrong-color;
-			color: $wrong-color;
 		}
 	}
 
