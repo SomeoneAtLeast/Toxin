@@ -1,0 +1,14 @@
+.color-and-type__main	{
+	width: 90%;
+	margin: 70px auto 0 auto;
+}
+
+@media (min-width: $bigdesktop)  {
+
+	.color-and-type__main	{
+		display: flex;
+		justify-content: space-between;
+		width: 59.9%;
+		margin: 145px auto 0 auto;
+	}
+}

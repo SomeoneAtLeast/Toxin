@@ -5,6 +5,7 @@
 .second-nav__title {
 	margin: 0 0 12px 0;
 	@include third-level-title;
+	font-size: 11.3px;
 	text-align: center;
 }
 
@@ -23,6 +24,7 @@
 	text-align: center;
 	padding: 10px 0 11px 0;
 	@include standart-font-and-color-50;
+	line-height: 17px;
 	transition: 0.5s;
 
 	&:active {

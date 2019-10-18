@@ -25,9 +25,9 @@
 	}
 }
 
-@media (min-width: $desktop)  {
+@media (min-width: $bigdesktop)  {
 
-	.copyright-and-social__wrapper {
+	.copyright-and-social .copyright-and-social__wrapper {
 		max-width: 1170px;
 		width: 61%;
 	}

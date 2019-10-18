@@ -1,4 +1,5 @@
 // Первый шрифт
+
 @font-face {
 	font-family: Montserrat-Regular; 
 	src: url("../fonts/montserrat/Montserrat-Regular.ttf");
@@ -10,7 +11,13 @@
 } 
 
 // Второй шрифт
+
 @font-face {
 	font-family: Quicksand-Bold; 
 	src: url("../fonts/quicksand/Quicksand-Bold.ttf");
+} 
+
+@font-face {
+	font-family: Quicksand-Regular; 
+	src: url("../fonts/quicksand/Quicksand-Regular.ttf");
 } 
