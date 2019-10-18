@@ -26,12 +26,12 @@
 	.main-header + .main-header {
 
 		&--margin {
-			margin-top: 38px;
+			margin-top: 40px;
 		}
 	}
 
 	.main-header {
-		padding: 12px 0;
+		padding: 12px 0 11px 0;
 	}
 
 	.main-header__wrapper {
@@ -44,7 +44,7 @@
 
 @media (min-width: $bigdesktop) {
 
-	.main-header__wrapper {
+	.main-header .main-header__wrapper {
 		max-width: 1170px;
 		width: 60.9%;
 	}

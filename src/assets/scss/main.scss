@@ -6,8 +6,15 @@
 body {
 	min-width: 320px;
 	overflow: scroll;
-	background-color: #E5E5E5;
 	@include standart-font-and-color;
+}
+
+.headers-and-footers {
+	background-color: #f4f4f6;
+}
+
+.color-and-type {
+	background-color: #fff;
 }
 
 a {

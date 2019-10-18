@@ -1,15 +1,29 @@
 .fonts-and-tags {
-	margin-right: 3.5%;
+	max-width: 403.5px;
+
+	&--margin {
+		margin: 100px auto;
+	}
+
 }
 
 .fonts-and-tags__examples {
 	display: flex;
-	width: 395px;
+}
+
+.fonts-and-tags__examples:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.fonts-and-tags__examples:last-child {
+	margin-top: -2px;
 }
 
 .fonts-and-tags__tag {
 	color: $main-font-color-25;
-	width: 37px;
+	min-width: 37px;
+	text-align: right;
+	margin-right: 7.5%;
 }
 
 .fonts-and-tags__examples:nth-child(1) .fonts-and-tags__tag {
@@ -33,7 +47,6 @@
 .fonts-and-tags__examples:nth-child(3) .fonts-and-tags__tag {
 	font-size: 12px;
 	line-height: 15px;
-	text-align: right;
 }
 
 .fonts-and-tags__examples:nth-child(3) .fonts-and-tags__characteristic  {
@@ -49,6 +62,13 @@
 	@include standart-font-and-color;
 }
 
-.fonts-and-tags__characteristic {
+@media (min-width: $bigdesktop) {
 
+	.fonts-and-tags {
+		width: 403.5px;
+
+		&--margin {
+			margin: 0 3.5% 0 0;
+		}
+	}
 }
