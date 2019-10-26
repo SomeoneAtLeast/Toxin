@@ -35,6 +35,7 @@ img {
 	margin: -1px;
 }
 
+@import "../../pages/main-pages/index.scss";
 @import "../../pages/ui-kit-pages/headers-and-footers/headers-and-footers.scss";
 @import "../../pages/ui-kit-pages/color-and-type/color-and-type.scss";
 @import "../../blocks/header/header.scss";
@@ -53,5 +54,5 @@ img {
 @import "../../blocks/colors/colors.scss";
 @import "../../blocks/main-font-color-100/main-font-color.scss";
 @import "../../blocks/fonts-and-tags/fonts-and-tags.scss";
-@import "../../blocks/form-input-email/form-input-email.scss";
+@import "../../blocks/form-input-subscribe/form-input-subscribe.scss";
 @import "../../blocks/form-elements-group-1/form-elements-group-1.scss";

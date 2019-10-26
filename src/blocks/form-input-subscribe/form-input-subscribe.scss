@@ -1,4 +1,4 @@
-.form-input-email {
+.form-input {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 9px 10px 9px 15px;
@@ -39,10 +39,57 @@
 	}
 }
 
+.form-btn {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	background-color: transparent;
+	border: none;
+	right: 0;
+	transition: 0.2s;
+
+	&:active {
+		transform: translateX(7px);
+		outline: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-arrow-line {
+	display: block;
+	position: absolute;
+	height: 2px;
+	background-color: $purple-color-1; 
+	background-image: linear-gradient(180deg, $purple-color-1 0%, $purple-color-2 100%);
+
+	&:first-child {
+		width: 10px;
+		top: 18px;
+		right: 13px;
+		transform: rotate(45deg);
+	}
+
+	&:nth-child(2) {
+		width: 14px;
+		right: 15px;
+		top: 21px;
+	}
+
+	&:last-child {
+		width: 10px;
+		bottom: 18px;
+		right: 13px;
+		transform: rotate(-45deg);
+	}
+}
+
 @media (min-width: $desktop) {
 
 
-	.form-input-email {
+	.form-input {
 
 		&:hover {
 			color: $main-font-color-75;
