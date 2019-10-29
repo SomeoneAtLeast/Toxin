@@ -27,6 +27,10 @@ img {
 	height: auto;
 } 
 
+h3 {
+	@include third-level-title;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -56,3 +60,4 @@ img {
 @import "../../blocks/fonts-and-tags/fonts-and-tags.scss";
 @import "../../blocks/form-input-subscribe/form-input-subscribe.scss";
 @import "../../blocks/form-elements-group-1/form-elements-group-1.scss";
+@import "../../pages/ui-kit-pages/form-elements/form-elements.scss";

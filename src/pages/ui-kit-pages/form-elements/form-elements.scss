@@ -1,0 +1,34 @@
+.form-elements-group-1__text {
+	font-size: 12px;
+	line-height: 15px;
+	color: $main-font-color-50;
+	text-transform: uppercase;
+}
+
+.form-elements-group-1__text-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: $tablet)  {
+
+	.form-elements__main {
+		width: 88.9%;
+
+		&--margin {
+			margin: 138px auto 0 auto;
+		}
+	}
+
+	.form-elements-group-1__inputs {
+		border: none;
+	}
+
+	.form-elements-group-1__email {
+		margin-bottom: 20px;
+	}
+
+	.form-elements-group-input-title {
+		margin: 0 0 5px 0;
+	}
+}
