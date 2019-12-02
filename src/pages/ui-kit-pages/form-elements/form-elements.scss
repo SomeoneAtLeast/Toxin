@@ -3,11 +3,35 @@
 	line-height: 15px;
 	color: $main-font-color-50;
 	text-transform: uppercase;
+
+	&--default {
+		margin-top: -3px;
+	}
 }
 
 .form-elements-group-1__text-block {
 	display: flex;
 	justify-content: space-between;
+}
+
+.form-elements-group-1__email .form-input {
+
+	&:focus,
+	&:hover {
+		color: $main-font-color-25;
+		border: 1px solid $main-font-color-25;
+	}
+
+	&:focus::placeholder,
+	&:hover::placeholder  {
+		color: $main-font-color-25;
+	}
+
+}
+
+.form-elements-group-1__pretty_awesome_text .form-input {
+	color: $main-font-color-75;
+	border: 1px solid $main-font-color-75;
 }
 
 @media (min-width: $tablet)  {
@@ -25,7 +49,7 @@
 	}
 
 	.form-elements-group-1__email {
-		margin-bottom: 20px;
+		margin-bottom: 21px;
 	}
 
 	.form-elements-group-input-title {
