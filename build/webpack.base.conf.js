@@ -81,7 +81,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}global-img`, to: `${PATHS.assets}img` },
       // { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/static`, to: '' },
+      // { from: `${PATHS.src}/static`, to: '' },
           ...IMG_DIRS.map((item) => {
         return { context: `${PATHS.src}/blocks/${item}/img`, from: '**/*', to: './assets/img' };
       })

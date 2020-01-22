@@ -37,7 +37,7 @@
 @media (min-width: $tablet)  {
 
 	.form-elements__main {
-		width: 88.9%;
+		width: 86.5%;
 
 		&--margin {
 			margin: 138px auto 0 auto;
@@ -46,6 +46,7 @@
 
 	.form-elements-group-1__inputs {
 		border: none;
+		padding-top: 5px;
 	}
 
 	.form-elements-group-1__email {
