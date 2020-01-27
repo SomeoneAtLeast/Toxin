@@ -1,0 +1,25 @@
+.dropdown {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 9px 10px 9px 14px;
+	font-size: 14px;
+	line-height: 24px;
+	color: $main-font-color-75;
+	border: 1px solid $main-font-color-25;
+	border-radius: 4px;
+	position: relative;
+
+	&::before {
+		content: "Сколько гостей";
+	}
+
+	&::after {
+		content: "∨";
+		position: absolute;
+		top: 8px;
+		right: 18px;
+		transform: scaleX(1.7);
+		font-size: 11px;
+		cursor: pointer;
+	}
+}

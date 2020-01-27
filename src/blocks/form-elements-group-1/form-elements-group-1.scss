@@ -2,9 +2,99 @@
 	width: 345px;
 }
 
+
+.form-elements-group-1__text {
+	font-size: 12px;
+	line-height: 15px;
+	color: $main-font-color-50;
+	text-transform: uppercase;
+
+	&--default {
+		margin-top: -3px;
+	}
+}
+
+.form-elements-group-1__text-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-elements-group-1__email .form-input {
+
+	&:focus,
+	&:hover {
+		color: $main-font-color-25;
+		border: 1px solid $main-font-color-25;
+	}
+
+	&:focus::placeholder,
+	&:hover::placeholder  {
+		color: $main-font-color-25;
+	}
+}
+
 .form-elements-group-1__pretty_awesome_text {
 
 	.form-input {
 		padding: 8px 10px 10px 14px;
+	}
+}
+
+.form-elements-group-1__pretty_awesome_text .form-input {
+	color: $main-font-color-75;
+	border: 1px solid $main-font-color-75;
+}
+
+.form-elements-group-1__date-input {
+
+	.form-elements-group-input-title {
+		margin-top: 2px;
+	}
+}
+
+.form-elements-group-1__dropdown-date {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.form-elements-group-1__dropdown-date-1,
+.form-elements-group-1__dropdown-date-2 {
+	width: 47%;
+}
+
+.form-elements-group-1__dropdown-date-1 {
+
+	.dropdown {
+
+		&::before {
+			content: "ДД.ММ.ГГГГ";
+		}
+	}
+}
+
+.form-elements-group-1__dropdown-date-2 {
+
+	.dropdown {
+
+		&::before {
+			content: "19.08.2019";
+		}
+	}
+}
+
+@media (min-width: $tablet)  {
+
+	.form-elements-group-1__inputs {
+		border: none;
+		padding-top: 5px;
+	}
+
+	.form-elements-group-1--input-margin {
+		margin-bottom: 6.32%;
+	}
+
+	.form-elements-group-input-title {
+		margin: 0 0 5px 0;
 	}
 }

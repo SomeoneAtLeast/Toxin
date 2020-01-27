@@ -1,13 +1,32 @@
 section.form-elements-group-1
 	form.form-elements-group-1__form
 		fieldset.form-elements-group-1__inputs
-			div.form-elements-group-1__email
+			div.form-elements-group-1__email.form-elements-group-1--input-margin
 				div.form-elements-group-1__text-block
 					h3.form-elements-group-input-title text field
 					span.form-elements-group-1__text.form-elements-group-1__text--default Default
 				include ../form-input-subscribe/inputs/text-input.pug
-			div.form-elements-group-1__pretty_awesome_text
+			div.form-elements-group-1__pretty_awesome_text.form-elements-group-1--input-margin
 				div.form-elements-group-1__text-block
 					h3.form-elements-group-input-title text field
 					span.form-elements-group-1__text.form-elements-group-1__text Hover / Focus
 				include ../form-input-subscribe/inputs/text-input.pug
+			div.form-elements-group-1__dropdown-guest-closed.form-elements-group-1--input-margin
+				div.form-elements-group-1__text-block
+					h3.form-elements-group-input-title Dropdown
+					span.form-elements-group-1__text.form-elements-group-1__text Default
+				include ../dropdown/dropdown.pug
+			div.form-elements-group-1__date-input.form-elements-group-1--input-margin
+				div.form-elements-group-1__text-block
+					h3.form-elements-group-input-title masked text field
+					span.form-elements-group-1__text.form-elements-group-1__text Default
+				include ../form-input-subscribe/inputs/text-input.pug
+			div.form-elements-group-1__dropdown-date.form-elements-group-1--input-margin
+				div.form-elements-group-1__dropdown-date-1
+					div.form-elements-group-1__text-block
+						h3.form-elements-group-input-title date dropdown
+					include ../dropdown/dropdown.pug
+				div.form-elements-group-1__dropdown-date-2
+					div.form-elements-group-1__text-block
+						h3.form-elements-group-input-title date dropdown
+					include ../dropdown/dropdown.pug

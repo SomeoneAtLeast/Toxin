@@ -26,5 +26,7 @@ if(window.location.toString().indexOf('headers_and_footers.html')>0) {
 }
 
 let pretty_awesome_input = document.querySelector(".form-elements-group-1__pretty_awesome_text .form-input");
+let date_input = document.querySelector(".form-elements-group-1__date-input .form-input");
 
 pretty_awesome_input.placeholder = "This is pretty awesome";
+date_input.placeholder = "ДД.ММ.ГГГГ";
