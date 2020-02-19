@@ -83,6 +83,22 @@
 	}
 }
 
+.form-elements-group-1__filter-date-dropdown {
+
+	.dropdown {
+		width: 83%;
+
+		&::before {
+			content: "19 авг - 23 авг";
+		}
+	}
+}
+
+.form-elements-group-1__subscribe {
+	position: relative;
+	width: 83%;
+}
+
 @media (min-width: $tablet)  {
 
 	.form-elements-group-1__inputs {
@@ -92,6 +108,10 @@
 
 	.form-elements-group-1--input-margin {
 		margin-bottom: 6.32%;
+	}
+
+	.form-elements-group-1--margin-top {
+		margin-top: 13%;
 	}
 
 	.form-elements-group-input-title {

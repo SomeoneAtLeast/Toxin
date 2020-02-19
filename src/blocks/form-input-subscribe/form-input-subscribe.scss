@@ -47,6 +47,7 @@
 	border: none;
 	right: 0;
 	transition: 0.2s;
+	cursor: pointer;
 
 	&:active {
 		transform: translateX(7px);
