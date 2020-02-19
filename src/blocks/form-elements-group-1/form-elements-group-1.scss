@@ -1,7 +1,12 @@
 .form-elements-group-1 {
 	width: 345px;
+	margin-right: 101px;
 }
 
+.form-elements-group-1__inputs {
+	border: none;
+	padding-top: 5px;
+}
 
 .form-elements-group-1__text {
 	font-size: 12px;
@@ -100,11 +105,6 @@
 }
 
 @media (min-width: $tablet)  {
-
-	.form-elements-group-1__inputs {
-		border: none;
-		padding-top: 5px;
-	}
 
 	.form-elements-group-1--input-margin {
 		margin-bottom: 6.32%;

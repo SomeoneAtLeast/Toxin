@@ -1,0 +1,36 @@
+.may-checkboxes__text-block {
+	margin-bottom: 17px;
+}
+
+.may-checkboxes-title {
+	margin: 0;
+}
+
+.may-checkboxes__checkbox-1,
+.may-checkboxes__checkbox-2,
+.may-checkboxes__checkbox-3 {
+
+	&:not(:last-child) {
+		margin-bottom: 3.1%;
+	}
+
+	&:nth-child(2) {
+
+		.checkbox__text {
+
+		&::before {
+			content: "Можно с питомцами";
+			}
+		}
+	}
+
+	&:nth-child(3) {
+
+		.checkbox__text {
+
+		&::before {
+			content: "Можно пригласить гостей (до 10 человек)";
+			}
+		}
+	}
+}
